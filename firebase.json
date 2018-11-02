@@ -1,9 +1,0 @@
-{
-  "hosting": {
-    "public": "dist/honeyBook",
-    "rewrites": [ {
-      "source": "**",
-      "destination": "/index.html"
-    } ]
-  }
-}
