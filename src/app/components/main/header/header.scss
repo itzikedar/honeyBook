@@ -1,0 +1,33 @@
+@import "../../../common/styles";
+
+$header-height: 80px;
+
+/deep/ app-header{
+  display:flex;
+  width:100%;
+  height: $header-height;
+  line-height:$header-height;
+  background: $white;
+  position: relative;
+}
+.header-text{
+  font-size: 28px;
+  display:block;
+  margin-left: 5%;
+}
+.serach-input{
+  width: 400px;
+  height: 40px;
+  margin-top: 18px;
+  position: absolute;
+  right: 5%;
+  padding-left: 10px;
+}
+@include mobileScreen{
+  .header-text{
+    font-size: 20px;
+  }
+  .serach-input{
+    width: 200px;
+  }
+}

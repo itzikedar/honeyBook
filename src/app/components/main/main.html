@@ -1,0 +1,6 @@
+<app-header></app-header>
+<div class="layout">
+  <div *ngFor="let contact of contactsList" class="box-wrapper">
+    <app-contactbox [contact]="contact"></app-contactbox>
+  </div>
+</div>

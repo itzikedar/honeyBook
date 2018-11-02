@@ -1,0 +1,20 @@
+<div (mouseenter) ="enter = true"  (mouseleave) ="enter = false">
+  <div class="image-wrapper">
+    <img class="contact-icon" [src]="contact.icon">
+    <img class="contact-profileImg" [src]="contact.profile_image">
+  </div>
+  <span class="header">
+  {{ contact.name }}
+</span>
+  <span class="data-row">
+   {{ contact.job }} | @{{contact.company_name}}
+</span>
+  <div *ngIf="enter">
+      <span class="data-row">
+        {{ 'contactBox.phone' | translate}}: {{ contact.phone | phonepipe }}
+      </span>
+    <span class="data-row">
+        {{ contact.email }}
+    </span>
+  </div>
+</div>

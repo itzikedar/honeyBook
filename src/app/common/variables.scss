@@ -1,0 +1,31 @@
+$mobileScreenMaxWidth: 850px;
+$smallScreenMaxWidth: 1150px;
+
+// Colors
+$mainRed: #ff0000;
+$clear-blue:#2e88f6;
+$white: #ffffff;
+$gray: rgb(232,233,237);
+$battleship-grey:#6b7787;
+$black: rgba(0, 0, 0, 0.5);
+$background-gray:rgb(232,233,237);
+$pale-grey:#dfe1e8;
+
+
+@mixin mobileScreen {
+  @media screen and (max-width: #{$mobileScreenMaxWidth}), (orientation: landscape) and (max-width: #{$mobileScreenMaxWidth})  {
+    @content;
+  }
+}
+@mixin regScreen {
+  @media screen and (min-width: #{850px}) {
+    @content;
+  }
+}
+
+@mixin animate($obj,$time,$type) {
+  -webkit-transition: $obj $time $type;
+  -moz-transition: $obj $time $type;
+  -o-transition: $obj $time $type;
+  transition: $obj $time $type;
+}

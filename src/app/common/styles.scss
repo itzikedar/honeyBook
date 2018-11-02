@@ -1,0 +1,8 @@
+@import "./variables";
+/deep/ body{
+  margin: 0;
+  background: $background-gray;
+}
+*:focus {
+  outline: none;
+}

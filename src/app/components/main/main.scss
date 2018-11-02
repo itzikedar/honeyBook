@@ -1,0 +1,14 @@
+@import "../../common/styles";
+.layout{
+  display : flex;
+  flex-direction : row;
+  justify-content : space-around;
+  flex-flow : wrap;
+  width: 90%;
+  margin: auto;
+}
+.box-wrapper{
+  width: 220px;
+  position: relative;
+  height: 360px;
+}
